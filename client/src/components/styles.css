@@ -26,11 +26,156 @@
 
 .button {
   background-color: black;
-  color: rgb(1, 184, 1);
-  border: 3px solid rgb(1, 184, 1);
+  color: red;
+  border: 3px solid red;
   border-radius: 10px;
   font-size: 24px;
   margin-top: 1.2rem;
   padding: 1.2rem;
   width: 250px;
+  cursor: pointer;
+}
+
+.button:hover {
+  transition-duration: 0.5s;
+  color: rgb(1, 184, 1);
+  border: 3px solid rgb(1, 184, 1);
+}
+
+.container-cards {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2.5rem;
+  margin: auto 4rem;
+  justify-self: center;
+
+  /* grid-template-columns: repeat(3 300px); */
+}
+
+.home {
+  background-image: linear-gradient(#000000, #700070, #a33400, #bdb000);
+  /* background-image: linear-gradient(to right, #870000, #190a05);
+   */
+  /* background-image: linear-gradient(to right, #5a3f37, #2c7744); */
+  /* background-image: linear-gradient( #2c3e50, #4ca1af); */
+  background-attachment: fixed;
+  height: auto;
+}
+
+.card {
+  background-color: #206123;
+  border-radius: 10px;
+  border: 3px solid black;
+  box-shadow: 8px 8px 30px black;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+  height: 390px;
+  width: 270px;
+}
+.card h2 {
+  margin-top: 5px;
+}
+.card p {
+  display: inline-flex;
+  margin: 0.5rem;
+  font-size: 19px;
+}
+.card img {
+  box-shadow: 6px 5px 10px black;
+  border-radius: 5px;
+}
+.card:hover {
+  box-shadow: 8px 8px 30px #ffffff;
+  border: 3px solid #ffffff;
+  transform: scale(0.9);
+  transition-duration: 0.5s;
+}
+#reload {
+  margin: 2rem;
+}
+#create:hover {
+  color: yellow;
+  border: 3px solid yellow;
+}
+#reload:hover {
+  color: blue;
+  border: 3px solid blue;
+}
+.pags {
+  margin-bottom: 0.5rem;
+}
+.pags button {
+  border: 2px solid white;
+  background-color: black;
+  border-radius: 7px;
+  color: white;
+  font-size: 18px;
+  margin: 0.7rem;
+  padding: 0.4rem;
+  width: 45px;
+}
+
+.pags button:focus,
+.pags button:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  transition-duration: 0.5s;
+}
+[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ratingButton {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  opacity: 0.2;
+}
+.ratingButton:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.background {
+  background-image: linear-gradient(#2c3e50, #4ca1af);
+  background-attachment: fixed;
+  height: auto;
+}
+.details-container {
+  border: 3px solid #01d601;
+  border-radius: 30px;
+  margin: 0 auto;
+  padding: 3rem;
+  width: 1000px;
+  background-color: #517070;
+  color: white;
+}
+.details-container img {
+  box-shadow: 0px 0px 20px black;
+  border-radius: 10px;
+}
+
+.details-container button {
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px;
+  width: 125px;
+}
+
+.form-container {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  padding: 1.5rem;
+  background-attachment: fixed;
+  height: auto;
+}
+
+#form {
+  width: auto;
+  margin-bottom: 1.5rem;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import background from "../img/background.mp4";
 import "./styles.css";
 
@@ -16,7 +17,11 @@ const LandingPage = () => {
           />
         </div>
         <div>
-          <button className="button">🎮  <b> Let´s start</b>   🎮</button>
+          <Link to="/home">
+            <button className="button">
+              🎮 <b> Let´s start</b> 🎮
+            </button>
+          </Link>
         </div>
         {/* <!-- Use a button to pause/play the video with JavaScript --> */}
       </div>
